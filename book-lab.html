@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LSANS - Book a Lab Slot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>LSANS Lab</h2>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pi.html">People ▾</a>
+        <ul class="sub">
+          <li><a href="pi.html">Principal Investigator</a></li>
+          <li><a href="collaborators.html">Research Collaborators</a></li>
+          <li><a href="students.html">Current Students</a></li>
+          <li><a href="alumni.html">Graduate Alumni</a></li>
+        </ul>
+      </li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="codebase.html">Codebase</a></li>
+      <li><a href="talks.html">Talks</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="availability.html">Lab Availability</a></li>
+      <li><a href="contact.html">Contact ▾</a>
+        <ul class="sub">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="book-lab.html">Book a Lab Slot</a></li>
+          <li><a href="join.html">Join the Lab</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero"><h1>Book a Lab Slot</h1></section>
+<div class="crumb"><a href="index.html">Home</a> / Contact / Book a Lab Slot</div>
+
+<div class="box">
+  <p>Check the <a href="availability.html">Lab Availability</a> timetable first, then request a <b>Free</b> slot below.</p>
+  <div class="grid">
+
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label>Your Name</label>
+      <input type="text" name="name" required>
+
+      <label>Your Email</label>
+      <input type="email" name="email" required>
+
+      <label>Date</label>
+      <input type="date" name="date" required>
+
+      <label>Time Slot</label>
+      <select name="slot">
+        <option>9:00 - 11:00</option>
+        <option>11:00 - 1:00</option>
+        <option>2:00 - 4:00</option>
+        <option>4:00 - 6:00</option>
+      </select>
+
+      <label>Purpose of Use</label>
+      <textarea name="purpose" rows="4" required></textarea>
+
+      <button type="submit">Request Slot</button>
+    </form>
+
+    <div class="info">
+      <h3>Before you book</h3>
+      <p>Pick a slot marked <span class="free">&nbsp;Free&nbsp;</span> on the timetable.</p>
+      <p>Questions? <a href="contact.html">Contact us</a>.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>Laboratory of Social Analytics and Network Science (LSANS) · South Asian University</p>
+  <p>Gaushala Road, Maidan Garhi, New Delhi 110068 · +91 (11) 35656500</p>
+  <p>© All rights reserved by South Asian University.</p>
+</footer>
+
+</body>
+</html>
