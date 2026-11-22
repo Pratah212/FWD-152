@@ -85,6 +85,6 @@ function scrollToTop() {
 // Form Submission Alert
 function submitForm(event) {
     event.preventDefault();
-    alert("Success! Your submission has been recorded and sent to LSANS (Room CSE-221, SAU).");
+    alert("This demonstration form is not connected to a submission service, so your information has not been sent. Please contact LSANS through the official SAU webpage.");
     event.target.reset();
 }

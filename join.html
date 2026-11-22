@@ -1,92 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>LSANS - Join the Lab</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Join LSANS | South Asian University</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <h2>LSANS Lab</h2>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pi.html">People ▾</a>
-        <ul class="sub">
-          <li><a href="pi.html">Principal Investigator</a></li>
-          <li><a href="collaborators.html">Research Collaborators</a></li>
-          <li><a href="students.html">Current Students</a></li>
-          <li><a href="alumni.html">Graduate Alumni</a></li>
-        </ul>
-      </li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="codebase.html">Codebase</a></li>
-      <li><a href="talks.html">Talks</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="availability.html">Lab Availability</a></li>
-      <li><a href="contact.html">Contact ▾</a>
-        <ul class="sub">
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="book-lab.html">Book a Lab Slot</a></li>
-          <li><a href="join.html">Join the Lab</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-<section class="hero"><h1>Join the Lab</h1></section>
-<div class="crumb"><a href="index.html">Home</a> / Contact / Join the Lab</div>
-
-<div class="box">
-  <p>Interested in working with Dr. Shashank Sheshar Singh? See the <a href="research.html">research areas</a> and our <a href="students.html">current students</a>, then fill in the form.</p>
-  <div class="grid">
-
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <label>Your Name</label>
-      <input type="text" name="name" required>
-
-      <label>Your Email</label>
-      <input type="email" name="email" required>
-
-      <label>Programme</label>
-      <select name="programme">
-        <option>Ph.D.</option>
-        <option>M.Tech.</option>
-        <option>IMP</option>
-        <option>M.Sc.</option>
-      </select>
-
-      <label>Research Interest</label>
-      <select name="interest">
-        <option>Influence Maximization</option>
-        <option>Link Prediction</option>
-        <option>Community Detection</option>
-        <option>Information Dissemination</option>
-      </select>
-
-      <label>About You</label>
-      <textarea name="about" rows="5" required></textarea>
-
-      <button type="submit">Send Application</button>
-    </form>
-
-    <div class="info">
-      <h3>Lab programmes</h3>
-      <p>Current members are enrolled in Ph.D., M.Tech., IMP and M.Sc. programmes.</p>
-      <p>Questions? <a href="contact.html">Contact us</a>.</p>
+    <div class="top-bar">
+        <div class="top-bar-left">South Asian University</div>
+        <div class="top-bar-right">LSANS Lab Portal</div>
     </div>
 
-  </div>
-</div>
+    <header class="site-header">
+        <div class="lab-brand">
+            <h1>LSANS</h1>
+            <p>Join the Research Lab</p>
+        </div>
+        <button id="themeBtn" class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="talks.html" class="nav-link">Talks</a>
+            <a href="availability.html" class="nav-link">Availability</a>
+            <a href="book-lab.html" class="nav-link">Book Lab</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="join.html" class="nav-link active">Join</a>
+        </nav>
+    </header>
 
-<footer>
-  <p>Laboratory of Social Analytics and Network Science (LSANS) · South Asian University</p>
-  <p>Gaushala Road, Maidan Garhi, New Delhi 110068 · +91 (11) 35656500</p>
-  <p>© All rights reserved by South Asian University.</p>
-</footer>
+    <main class="container">
+        <section class="card-section" style="max-width: 650px; margin: 0 auto;">
+            <h2 class="section-title">Application / Research Inquiry</h2>
+            <p class="lead-text">Interested in network science, graph theory, or influence maximization? Submit your application below.</p>
+            
+            <form onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label>Full Name:</label>
+                    <input type="text" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>Email Address:</label>
+                    <input type="email" required placeholder="your.email@sau.int">
+                </div>
+                <div class="form-group">
+                    <label>Program of Interest:</label>
+                    <select>
+                        <option>Ph.D. in Computer Science & Engineering</option>
+                        <option>M.Tech in Computer Science</option>
+                        <option>M.Sc. / IMP Research Intern</option>
+                        <option>B.Tech Project Collaborator</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Statement of Research Interest:</label>
+                    <textarea rows="4" required placeholder="Briefly describe your academic background, coding skills, and research interests..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+            </form>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <p>© 2026 Laboratory of Social Analytics and Network Science (LSANS), South Asian University.</p>
+    </footer>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
 </body>
 </html>
